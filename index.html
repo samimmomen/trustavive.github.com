@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Product Review</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1600/600?health') no-repeat center center/cover;
+      color: #fff;
+      padding: 120px 20px;
+      text-align: center;
+    }
+    .benefit-card {
+      transition: transform 0.3s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-10px);
+    }
+    .review {
+      font-style: italic;
+    }
+    .cta {
+      background: #198754;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cta button {
+      font-size: 1.2rem;
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="display-4 fw-bold">ProstaVive – Health Product Review</h1>
+      <p class="lead">Discover the natural solution for better health & well-being.</p>
+      <a href="#about" class="btn btn-success btn-lg mt-3">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5" id="about">
+    <div class="container text-center">
+      <h2 class="mb-4">About This Product</h2>
+      <p class="text-muted">ProstaVive is a natural health supplement designed to support prostate health, reduce frequent urination, and boost overall wellness. Made with powerful herbs and clinically studied ingredients, it’s trusted by thousands of men worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-5 bg-light" id="benefits">
+    <div class="container">
+      <h2 class="text-center mb-5">Key Benefits</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card benefit-card p-4 shadow-sm h-100 text-center">
+            <div class="mb-3"><i class="bi bi-heart-pulse fs-1 text-success"></i></div>
+            <h5>Supports Prostate Health</h5>
+            <p class="text-muted">Keeps your prostate healthy with natural ingredients.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card benefit-card p-4 shadow-sm h-100 text-center">
+            <div class="mb-3"><i class="bi bi-moon-stars fs-1 text-success"></i></div>
+            <h5>Improves Sleep</h5>
+            <p class="text-muted">Reduces nighttime urination for uninterrupted sleep.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card benefit-card p-4 shadow-sm h-100 text-center">
+            <div class="mb-3"><i class="bi bi-battery-charging fs-1 text-success"></i></div>
+            <h5>Boosts Energy</h5>
+            <p class="text-muted">Helps restore vitality and stamina naturally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="py-5" id="reviews">
+    <div class="container">
+      <h2 class="text-center mb-5">Customer Reviews</h2>
+      <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <p class="review">“ProstaVive changed my life. I no longer wake up 4-5 times a night. Highly recommend!”</p>
+            <h6>- John M.</h6>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="review">“I feel more energetic and confident. A must-try product!”</p>
+            <h6>- David P.</h6>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="review">“Finally, a supplement that actually works. My health improved drastically.”</p>
+            <h6>- Michael R.</h6>
+          </div>
+        </div>
+        <button class="c
